@@ -1,0 +1,11 @@
+
+#alert-box {
+    background: #acacea;
+    color: #4c4cc7;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+.yellow-bg{
+    background: yellow;
+}

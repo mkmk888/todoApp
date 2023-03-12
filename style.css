@@ -1,3 +1,167 @@
+.hidden {
+    display: none;
+}
 body {
-    background-color: beige;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+.main {
+    height: 800px;
+    width: 1000px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px 0px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+}
+.left-up{
+    border-radius: 15px;
+    border: 1px solid grey;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 0px grey;
+}
+.left-down{
+    border-radius: 15px;
+    border: 1px solid grey;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 0px grey;
+}
+.right-up{
+    border-radius: 15px;
+    border: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 0px grey;
+}
+#clock{
+    font-size: 80px;
+    margin: 10px;
+}
+#clock-date{
+    font-size: 40px;
+    margin: 10px;
+}
+#quote{
+    text-align: center;
+    margin: 20px;
+}
+#weather{
+    align-items: center;
+}
+#login-form, #greeting{
+    font-size: 55px;
+    margin: 0px;
+}
+#todo-form input{
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+#todo-list{
+    font-size: 20px;
+    padding: 10px;
+}
+li{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px 0px grey;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 250px;
+}
+.hover{
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	text-decoration: none;
+	border-radius: 20px;
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,0);
+}
+.hover:hover{
+        color: rgba(255, 255, 255, 0.85);
+        box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+.todoButton{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[value="Log In"]{
+    padding: 5px;
+    display: inline;
+}
+form [type="text"]{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 40%;
 }

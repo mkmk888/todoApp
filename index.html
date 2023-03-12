@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link id="link" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <title>할일</title>
 </head>
+
 <body>
-    <h1>????</h1>
-    <script src="app.js"></script>
+    <div class="main">
+        <div class="left">
+            <div class="left-up">
+                <form id="login-form" class="hidden">
+                    <input required="required" maxlength="15" type="text" placeholder="이름을 입력하세요" />
+                    <input type="submit" value="Log In" class="hover" />
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+                <div id="quote">
+                    <span></span>
+                    <div></div>
+                    <span></span>
+                </div>
+                <button id="changebg" class="hover">배경바꾸기</button>
+            </div>
+            <div class="left-down">
+                <h3 id="clock-date">xx년 x월 x일</h3>
+                <h1 id="clock">00:00:00</h1>
+                <div id="weather">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="right-up">
+                <form id="todo-form">
+                    <input type="text" maxlength="19" placeholder="해야할 일을 입력하세요" required />
+                </form>
+                <ul id="todo-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/date.js"></script>
 </body>
+
 </html>
